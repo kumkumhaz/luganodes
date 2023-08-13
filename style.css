@@ -432,6 +432,8 @@ nav{
     .newline{
         width: 90%;
         font-size: 12.5px;
+        margin-top: 170px;
+
     }
     .homeleft p:nth-child(2){
         font-size: 31px;
