@@ -25,7 +25,7 @@ burger.addEventListener("click", () => {
 
 document.addEventListener("click", (event) => {
   const target = event.target;
-  if (!navmenuList.contains(target) && !burger.contains(target)) {
+  if (window.innerWidth <= 1025 && !navmenuList.contains(target) && !burger.contains(target)) {
     closeNavmenu();
   }
 });
