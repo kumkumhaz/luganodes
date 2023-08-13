@@ -1,0 +1,441 @@
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+}
+nav{
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.navbar{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.navleft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+.logo img{
+    width: 200px;
+}
+
+.navmenu ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navmenu ul li {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    margin:0 16px;
+    font-size: 18px;
+    font-weight: 630;
+    color: rgba(145,23,56,255);
+    cursor: pointer;
+}
+
+.navmenu li:hover{
+   color:rgba(190,30,46,255) ;
+}
+.navmenu ul li svg {
+    margin: 5px;
+    margin-top: 7px;
+}
+.closeicon{
+    display: none;
+}
+.navmenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 170%;
+    left: 0;
+    background-color: rgb(251, 249, 249);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.navmenu .dropdown-menu svg{
+  margin: 15px;
+}
+.navmenu li.active .dropdown-menu {
+    display: block;
+}
+.navmenu .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Added align-items property */
+    width: 280px;
+}
+.navmenu .dropdown-menu li {
+    margin: 0px !important ;
+    font-weight: 630;
+    padding: 0 !important;
+}
+.dropdown-menu ul li a:hover {
+    color: rgba(190, 30, 46, 255) ;
+}
+.navmenu .dropdown-menu a {
+    text-decoration: none;
+    color: black;
+}
+.navbar button{
+    border: none;
+    border-radius: 4px;
+    background-color:rgba(190,30,46,255);
+    padding: 10px 10px;
+    color: white;
+    font-weight: 530;
+    font-size: 18px;
+}
+
+.burger {
+    margin-right: 45px;
+    display: none;
+    cursor: pointer;
+}  
+.burger .line {
+    width: 20px;
+    background-color:rgba(190,30,46,255);
+    height: 2px;
+    margin: 2px 2px;
+}
+
+.home{
+    height: 90vh;
+    width: 98.5%;
+    background-image: url(https://www.luganodes.com/static/globei.c2ad9f67.svg);
+    background-position: right; /* Set the background position to the right */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+.home img{
+    float: right;
+    height: 60%;
+    width: 60%;
+}
+
+.homeleft{
+    height: 77%;
+    width: 710px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newline{
+    background-color: rgba(250,224,224,255);
+    display: block;
+    flex-direction: row;
+    border-radius: 30px;
+    font-size: 13.5px;
+    padding-bottom: 1.8px;
+    width: 390px;
+    margin-top: 70px;
+    letter-spacing: normal !important;
+}
+.newline p{
+    margin: 5px !important;  
+    font-weight: 500;  
+    color: rgba(145,23,56,255);
+}
+.newline span{
+    background-color:rgba(145,23,56,255) ;
+    padding: 1px 8px;
+    padding-bottom: 2.5px !important;
+    margin: 10px;
+    margin-bottom: 9px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    margin-left: 0px !important;
+}
+.buttons{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons img{
+    width: 155px;
+    height: 30px;
+}
+
+.homeleft p:nth-child(2){
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 20px;
+    letter-spacing: -3px;
+    margin-bottom: 8px; 
+}
+.hometagline{
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: gray;
+} 
+.buttons{
+    margin-top: 80px;
+}
+.home button:first-child{
+    border: none;
+    border-radius: 4px;
+    background-color:rgba(190,30,46,255);
+    padding: 15px 15px;
+    color: white;
+    font-weight: 530;
+    font-size: 18px;
+}
+.buttons button.getstarted:nth-of-type(2) {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 4px;
+    padding: 15px 15px;
+    font-weight: 550;
+    font-size: 18px;
+    background-color: white;
+}
+.buttons img{
+    padding-top: 11px;
+}
+
+.subheading{
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    letter-spacing: -2px;
+}
+.subsectionbody{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.subsectionleft img{
+    width: 100%;
+    max-height: 80%;
+}
+.subsectionright{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+.card h2{
+    margin: 0 !important;
+}
+.card p{
+    margin: 0 !important;
+    font-size: 18px;
+    color: rgb(34, 33, 33);
+    line-height: 24px;
+    padding-top: 3px;
+}
+.cardleft img{
+    margin-right: 26px;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1025px) {
+    .navbar{
+        width: 92%;       
+    }
+    .burger{
+        display: block;
+    }
+    .navmenu{
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        left: 0; 
+        background-color: white;
+        padding-bottom: 25px;
+        transition: top 0.5s ease-in-out;
+        height: 630px;
+    }
+      .navmenu li{
+        margin: 130px 0;
+        text-align: left;
+    }
+
+    
+    .navright {
+        display: none;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .navright button {
+        width: 92%;
+        height: 100%;
+    }
+    
+    .navmenu ul{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        text-align: left;
+        width: 200px;
+    }
+    .navmenu ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+    .navmenu .dropdown-menu {
+        top: 70%;
+        left: 0;
+    }
+    .dropdown-menu {
+        margin-left: 130px;
+    }
+      
+     .navmenu .dropdown-menu ul {
+        width: 280px;
+     }
+     .dropdown-menu {
+        display: none;
+    }
+    
+    
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100% 100%;
+        padding-bottom: 80px;
+        background-image: url(https://www.luganodes.com/static/gglobr.ee87b8c9.svg);
+    }
+    .newline{
+        border-radius: 30px;
+        font-size: 12.5px;
+        width: auto;
+        padding-bottom: 1.8px;
+        margin-top: 70px;
+    }
+    .homeleft{
+        align-items: center;
+        margin-left: 0;
+    }
+    .homeleft p:nth-child(2){
+        font-size: 38px;
+        font-weight: 650;
+        line-height: 35px;
+        margin-top: 10px !important;
+        margin-bottom: 300px;
+        margin-top: 20px;
+        letter-spacing: -1px; 
+        text-align: center;
+    }
+    .hometagline{
+        font-size: 21px;
+        letter-spacing: -1px;
+        text-align: center;
+        line-height: 24px;
+    }
+    .buttons{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    } 
+    .home button:first-child{
+        border: none;
+        border-radius: 4px;
+        background-color:rgba(190,30,46,255);
+        padding: 15px 15px;
+        color: white;
+        font-weight: 530;
+        font-size: 18px;
+        width: 94%;
+    }
+    .buttons button.getstarted:nth-of-type(2) {
+        font-weight:550;
+        font-size: 18px;
+        width: 94%;
+        margin: 10px;
+    }
+
+
+    .subheading{
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+        letter-spacing: -1px;
+        line-height: 30px;
+        padding: 10px;
+    }
+    .subsectionright{
+        width: 100%;
+    }
+    .subsectionbody{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .subsectionleft img{
+        width: 100%;
+        max-height: 80%;
+        margin-top: 30px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 17px;
+        color: rgb(34, 33, 33);
+        line-height: 23px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .newline{
+        width: 90%;
+        font-size: 12.5px;
+    }
+    .homeleft p:nth-child(2){
+        font-size: 31px;
+    }
+
+}
+
